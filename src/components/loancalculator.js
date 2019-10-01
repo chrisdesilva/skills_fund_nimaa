@@ -69,8 +69,8 @@ const calculateMonthlyPayment = () => {
 }
 
 const calculateInterest = () => {
-    let interest36 = (loanAmount * (1 + faq.origFee) / 12 * (8.99 / 100)).toFixed(2)
-    let interest60 = (loanAmount * (1 + faq.origFee) / 12 * (10.99 / 100)).toFixed(2)
+    let interest36 = (loanAmount * (1 + faq.origFee) / 12 * (interestRates.ir36 / 100)).toFixed(2)
+    let interest60 = (loanAmount * (1 + faq.origFee) / 12 * (interestRates.ir60 / 100)).toFixed(2)
     setInterestPayment({payment36: interest36, payment60: interest60})
 }
 
