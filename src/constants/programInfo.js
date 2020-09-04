@@ -135,7 +135,7 @@ export const faq = {
     {
       programName: "the NIMAA Medical Assistant Training Program",
       maxAmount: "$6,760",
-      col: true,
+      col: false,
       colAmount: "$6,000",
     },
   ],
